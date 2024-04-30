@@ -1,0 +1,79 @@
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+-webkit-font-smoothing: antialiased;
+}
+html,body{
+height: 100%;
+width: 100%;
+}
+#main{
+width: 100%;
+position: relative;
+overflow: hidden;
+}
+#container-first{
+height: 100vh;
+width: 100%;
+position: relative;
+}
+#container-first img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.circle{
+    width: 70vw;
+    height: 70vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+.circle img{
+    /* the image shulde taking the width of circle */
+    width: 100%;  
+    /* all of the image are absolute they are overlape each-other */
+    position: absolute;
+    /* we gona say this image are centerd of this circle */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.circle .top{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+/* .circle .top img{
+    transform: translate(-50%, -50%) rotate(-180deg);
+} */
+/* we gona say this image are rotate -180 deg but similarly this image also center that we rewrite the translet code */
+.circle .top img:nth-child(1){
+    transform: translate(-50%, -50%) rotate(-180deg) scale(2);
+}
+.circle .top img:nth-child(2){
+    transform: translate(-50%, -50%) rotate(-180deg) scale(1.5);
+}
+.circle .top img:nth-child(3){
+    transform: translate(-50%, -50%) rotate(-180deg) scale(1);
+}
+.circle .btm{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.circle .btm img:nth-child(1){
+    transform: translate(-50%, -50%) scale(2);
+}
+.circle .btm img:nth-child(2){
+    transform: translate(-50%, -50%) scale(1.5);
+}
+.circle .btm img:nth-child(3){
+    transform: translate(-50%, -50%) scale(1);
+}
